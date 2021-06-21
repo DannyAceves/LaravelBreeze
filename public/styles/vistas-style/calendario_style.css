@@ -1,0 +1,84 @@
+
+.contenedor-calendario {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario {
+    padding: 20px 10px;
+    background-color: #A3C185;
+    border-radius: 3px;
+    width: 800px;
+    max-width: 800px;
+    height: 650px;
+    max-height: 800px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.calendario_cabeza {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calendario .control {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.cuerpo_cabeza, .cuerpo_cuerpo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.cuerpo_cabeza {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cuerpo_cuerpo {
+    grid-auto-rows: 80px;
+    color: var(--color-cell);
+    height: 350px;
+}
+
+.grid__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__cell--gd {
+    cursor: pointer;
+}
+
+.grid__cell--selected {
+    color: var(--color-bg-calendar);
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
+}
+
+.grid__cell--disabled {
+    color: var(--color-cell-disabled);
+    cursor: not-allowed;
+}
+
+.w3-container{
+    
+}
+.barra {
+    color: #fff!important;
+    background-color: #a3c185!important;
+}
+

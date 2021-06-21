@@ -1,0 +1,84 @@
+.noti-general{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.wrapper{
+    width:100%;
+    padding-top: 20px;
+    text-align:center;
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .title-carousel{
+      margin-top: 145px;
+  }
+.wrapper .content-arrow{
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel{
+    width:90%;
+    margin:0px auto;
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+  }
+  
+  .card{
+      box-shadow: 1px 1px 15px #ccc;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+    .card-body{
+        border-radius: 0 0 15px 15px;
+        background: #686868;
+        width: 100%;
+        vertical-align: top;
+    }
+    .card-content{
+      color: white;
+    text-align: left;
+  
+
+    padding: 15px;
+  }
+  .card-text{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .card-title{
+    text-align: center;
+  }
+
+
+  
+#next{
+    font-size: 40px;
+    color: #C2C2C2;
+    cursor: pointer;
+}  
+#prev{
+    font-size: 40px;
+    color: #C2C2C2;
+    cursor: pointer;
+    
+}
+
+.content-img-title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}

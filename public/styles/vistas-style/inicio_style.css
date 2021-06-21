@@ -1,0 +1,296 @@
+/*######### inicio ############ */
+
+.inicio-section {
+    height: 100vh;
+}
+
+.wave-inicio-1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.wave-inicio-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-titles-and-img {
+    position: relative;
+    height: 100%;
+}
+.title-inicio {
+    color: #a3c185;
+    position: absolute;
+    font-size: 36px;
+    top: 100px;
+    left: 5%;
+}
+
+.img-inicio {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    left: 52%;
+    bottom: 220px;
+    height: 286px;
+}
+.img-logo {
+    position: absolute;
+    left: 130px;
+    bottom: 100px;
+    width: 330px;
+    height: 300px;
+}
+/*######### Notificaciones ############ */
+.notificaciones-section {
+    height: auto;
+}
+.notificaciones-section p {
+    text-align: center;
+}
+
+.titles-carrusel {
+    font-size: 20px;
+}
+
+/* Carrusel */
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+div#slider {
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    height: 500px;
+}
+div#slider figure div {
+    width: 20%;
+    float: left;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+div#slider div img {
+    width: 100%;
+    float: left;
+    height: 500px;
+    z-index: 1;
+    filter: brightness(0.5);
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    height: 500px;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
+.container-img-text {
+    position: relative;
+}
+.container-img-text p{
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+    bottom: 0;
+ 
+    font-size: 36px;
+    color: white;
+}
+
+
+/*######### citas ############ */
+.citas-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+.citas-section p {
+    text-align: center;
+}
+.content-img-text-citas {
+  
+    height: 500px;
+
+    margin: auto;
+    display: flex;
+}
+.text-citas {
+    position: relative;
+}
+.text-citas p {
+    color: white;
+    position: absolute;
+    top: 46px;
+    text-align: justify;
+    width: 409px;
+    left: 76px;
+    font-size: 20px;
+}
+.img-citas {
+    margin: 0;
+}
+
+/*
+******************
+====Resposive=======
+**********************
+*/
+
+@media only screen and (min-width: 1400px) {
+    /* For pantallas mas grandes: */
+    .title-inicio {
+        top: 120px;
+        font-size: 46px;
+        left: 15%;
+    }
+    .img-inicio {
+        width: 600px;
+        bottom: 225px;
+    }
+    .img-logo {
+        left: 400px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .img-inicio {
+        width: 200px;
+        z-index: 1;
+        left: 62%;
+        bottom: 160px;
+        height: 286px;
+    }
+
+    .citas-section {
+        height: auto;
+        
+    
+    }
+    .citas-section p {
+        text-align: center;
+    }
+    .content-img-text-citas {
+        width: 100%;
+        height: 500px;
+    
+        margin: auto;
+        display: flex;
+        background: #a3c185;
+        align-content: center;
+        justify-content: center;
+    }
+    .text-citas {
+       
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column
+    }
+    .text-citas p {
+        position: sticky;
+        width: auto;
+    }
+    .img-citas {
+        display: none;
+    }
+    .vector-buble{
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    .title-inicio {
+        top: 120px;
+        font-size: 26px;
+        left: 50px;
+    }
+    .img-inicio {
+        width: 200px;
+        z-index: 1;
+        left: 62%;
+        bottom: 160px;
+        height: 286px;
+    }
+    .img-logo {
+        left: 50px;
+        bottom: 143px;
+        width: 230px;
+        height: 200px;
+    }
+
+    /* Carrusel */
+    div#slider {
+        height: auto;
+    }
+    div#slider figure div {
+        height: auto;
+    }
+    div#slider  div img{
+        height: auto;
+    }
+    div#slider figure {
+        position: relative;
+        width: 500%;
+        height: auto;
+    }
+    .container-img-text p{
+       
+     
+        font-size: 16px;
+      
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .title-inicio {
+        left: 0;
+        text-align: center;
+    }
+    .img-inicio {
+        display: none;
+    }
+    .img-logo {
+        top: 306px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+    }
+    .informa-contacto-content {
+        text-align: center;
+    }
+}

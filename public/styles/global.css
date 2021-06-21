@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Quicksand-Bold ;
+    src: url("/fonts/Quicksand-Bold.ttf");
+}
+html,
+body {
+    font-family: Quicksand-Bold !important;
+    margin: 0;
+}
+
+body {
+    background: #f1f1f1;
+}
+/*######### Layout ############ */
+
+header {
+    background-color: #a3c185;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.titles {
+    color: #a3c185;
+    font-size: 50px;
+    
+}
+
+.menu-nav {
+    height: 85px;
+    display: flex;
+}
+
+.menu-nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-nav li {
+    display: inline;
+}
+.menu-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.menu-nav a:hover {
+    text-decoration: underline;
+}
+
+/*######### Footer ############ */
+main {
+    height: 100%;
+}
+footer {
+    height: 700px ;
+    color: white;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-uno {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.informa-contacto-content {
+    z-index: 1;
+    margin-top: 150px;
+}
+.siguenos-content {
+    z-index: 1;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+.siguenos-content i {
+    font-size: 35px;
+    padding-right: 20px;
+}
+.siguenos-content div {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+.envianos-content {
+    z-index: 1;
+    margin-top: 50px !important;
+}
+.envianos-content input {
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    height: 23px;
+    outline: none;
+}
+.envianos-content textarea {
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+.btn {
+    color: #ffffff;
+    background-color: #c2c2c2;
+    width: 250px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* style titulos generales */
+footer div > p {
+    font-size: 36px;
+    color: #e0e0e0;
+}
+
+/* Información del pie de página */
+
+.info-pie-pagina {
+    z-index: 1;
+    margin: auto;
+}
+.info-pie-pagina p {
+    font-size: 14px;
+}
+
+/* waves */
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+/*
+******************
+====Resposive=======
+**********************
+*/
+/*######### Icono nav responsive ############ */
+
+.logor{
+    width: 53px;
+    margin: -10px -10px;
+}
+
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    background: #4F4F4F;
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    /* For pantallas mas grandes: */
+}
+@media only screen and (max-width: 1200px) {
+    footer {
+        height: auto;
+        background-color: #686868;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    /* For tablets: */
+   
+    header label{
+        display: block;
+        
+    }
+    header{
+        margin-bottom: 200px;
+    }
+
+    .menu-nav{
+        position: absolute;
+        background: #A3C185;
+        height: auto;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .menu-nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #btn-menu:checked ~ .menu-nav{
+        margin: 0;
+    }
+
+    footer div > p {
+        text-align: center;
+    }
+    .wave {
+        height: 100%;
+    }
+    .envianos-content input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .envianos-content textarea {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+}
+
+
+#contenedor_carga{
+    background-color: #618658;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 1s ease;
+    z-index: 10000;
+
+}
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #F4266A ;
+    border-top-style: groove ;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;   
+    margin: auto;
+    animation: girar 1.5s linear infinite ;
+}
+@keyframes girar {
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+    
+}
